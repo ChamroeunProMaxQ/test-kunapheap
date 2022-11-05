@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './assets/shopingcart.gif';
 import './App.css';
 
 function App() {
@@ -6,9 +6,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <div className='line'>____________________________________</div>
+        <p className='under-text'>
           Kunapheap Store Coming Soon ....
         </p>
+        
         <a
           className="App-link"
           href="https://reactjs.org"
