@@ -1,26 +1,21 @@
-import logo from './assets/shopingcart.gif';
-import './App.css';
+import "./App.css";
+import { Helmet } from "react-helmet";
+import { Link, Route, Routes } from "react-router-dom";
+import Team from "./components/Team";
+import Home from "./components/Home";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <div className='line'>____________________________________</div>
-        <p className='under-text'>
-          Kunapheap Store Coming Soon ....
-        </p>
-        
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          
-        </a>
-      </header>
-    </div>
+    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Kunapheap Store</title>
+      </Helmet>
+      <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/team" element={<Team/>} />
+      </Routes>
+    </>
   );
 }
 

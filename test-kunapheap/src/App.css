@@ -43,3 +43,15 @@
     transform: translateX(-50px);
   }
 }
+
+@media only screen and (max-width: 600px) {
+
+  .line {
+    transform: translateY(-35px);
+  }
+}
+
+.no-margin {
+  margin-top: -20px;
+  color: blue;
+}
