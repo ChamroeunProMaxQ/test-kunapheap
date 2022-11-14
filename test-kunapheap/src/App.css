@@ -7,21 +7,22 @@
   pointer-events: none;
  
 }
+
 .line {
   transform: translateY(-55px);
 }
 .under-text {
-  transform: translateY(-40px);
+  color: #2B2B2B;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 8s linear;
+    animation: App-logo-spin infinite 1.8s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #FEFBF3;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,11 +37,20 @@
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: translateX(100px);
+  0% {
+    transform: translateY(0px)
   }
-  to {
-    transform: translateX(-50px);
+  25% {
+    transform: translateY(10px)
+  }
+  50% {
+    transform: translateY(15px)
+  }
+  75% {
+    transform: translateY(10px)
+  }
+  100% {
+    transform: translateY(1px)
   }
 }
 
@@ -53,5 +63,4 @@
 
 .no-margin {
   margin-top: -20px;
-  color: blue;
 }
